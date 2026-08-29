@@ -8,6 +8,20 @@ This project is being developed as part of our academic project for the **Depart
 
 [Visit the deployed application](https://grievance-management-module.itclub.asmitphuyal.com.np)
 
+### Demo Credentials
+
+| Role          | Username      | Password     |
+|---------------|---------------|--------------|
+| HOD (Electronics & Computer)  | `computer`   | `darpangiri` |
+| HOD (Electrical)              | `electrical`  | `darpangiri` |
+| HOD (Mechanical)              | `mechanical`  | `darpangiri` |
+| HOD (Civil)                   | `civil`       | `darpangiri` |
+| HOD (Architecture)            | `architecture`| `darpangiri` |
+| HOD (Applied & Chemical)      | `chemical`    | `darpangiri` |
+| HOD (General)                 | `general`     | `darpangiri` |
+| Campus Admin                  | `campusadmin` | `darpangiri` |
+| Student                       | `080bct024`   | `darpangiri` |
+
 ---
 
 ## Table of Contents
@@ -38,10 +52,23 @@ This project is being developed as part of our academic project for the **Depart
 - Submission rate limiting to prevent spam
 
 ### Grievance Lifecycle
-- Full status workflow: `Submitted → Under Review → In Progress → Resolved / Rejected / Closed`, with `Reopened` and `Escalated` states
+- Full status workflow with valid transitions between every state (see table below)
 - Full **status history** with remarks and timestamps for every transition
 - **Reminder comments** so submitters can nudge the HOD when a grievance gets stuck
 - **Attachments** on grievances and reopen requests
+
+#### Grievance Statuses
+
+| Status | Description |
+|--------|-------------|
+| **Submitted** | Grievance filed; awaiting HOD review |
+| **Under Review** | HOD is working on the grievance |
+| **In Progress** | Resolution underway |
+| **Reopened** | Student reopened a resolved/rejected grievance |
+| **Escalated** | Automatically escalated to Campus Admin after `7 days` or left unresolved |
+| **Resolved** | Grievance addressed; awaiting submitter confirmation |
+| **Rejected** | Dismissed by the HOD/Admin |
+| **Closed** | Finalized after resolution or submitter acknowledgement |
 
 ### Appeals, Reopens & Escalations
 - **Reopen requests** and **rejection appeals** for submitters
