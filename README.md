@@ -80,7 +80,6 @@ This project is being developed as part of our academic project for the **Depart
 |:---:|:---:|
 | ![Campus Grievance Trend](screenshots/campus-grievance-trend.png "Campus Grievance Trend") | ![System Config & Policies](screenshots/system-config.png "System Config & Policies") |
 
-> **More screenshots coming soon:** Registration page, Login page, AI Spam Filter & Review, Requests / Appeals, and User Profile.
 
 ---
 
