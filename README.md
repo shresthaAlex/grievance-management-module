@@ -4,10 +4,15 @@
 
 This project is being developed as part of our academic project for the **Department of Electronics and Computer Engineering, Pulchowk Campus**.
 
+## 🌐 Live Demo
+
+[Visit the deployed application](https://grievance-management-module.itclub.asmitphuyal.com.np)
+
 ---
 
 ## Table of Contents
 
+- [Live Demo](#-live-demo)
 - [Features](#features)
 - [Screenshots](#screenshots)
 - [System Roles](#system-roles)
