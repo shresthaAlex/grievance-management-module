@@ -13,6 +13,7 @@ This project is being developed as part of our academic project for the **Depart
 | Role          | Username      | Password     |
 |---------------|---------------|--------------|
 | HOD (Electronics & Computer)  | `computer`   | `darpangiri` |
+| HOD (Electronics & Computer) for handling real college grievances we assigned this | `prakash.chandra@pcampus.edu.np`   | `prakashchandra` |
 | HOD (Electrical)              | `electrical`  | `darpangiri` |
 | HOD (Mechanical)              | `mechanical`  | `darpangiri` |
 | HOD (Civil)                   | `civil`       | `darpangiri` |
@@ -20,6 +21,7 @@ This project is being developed as part of our academic project for the **Depart
 | HOD (Applied & Chemical)      | `chemical`    | `darpangiri` |
 | HOD (General)                 | `general`     | `darpangiri` |
 | Campus Admin                  | `campusadmin` | `darpangiri` |
+| Campus Admin for handling real college grievances we assigned this                  | `samip.subedi@pcampus.edu.np` | `samipsubedi123` |
 | Student                       | `080bct024`   | `darpangiri` |
 
 ---
@@ -41,12 +43,12 @@ This project is being developed as part of our academic project for the **Depart
 ### Authentication & Roles
 - Self-registration for Students and Staff (with department selection)
 - Secure, role-based login and RBAC for **Student**, **Staff**, **HOD**, and **Campus Admin**
-- Password reset and profile management
+
 
 ### Grievance Submission
 - Grievance submission with title, detailed description, category, and file attachments
 - **Fully anonymous option** — trackers get a one-time secret code to monitor progress
-- **Sensitive grievance flag** — department staff/HOD/Admin must confirm before viewing sensitive content
+- **Sensitive grievance flag** — HOD/Admin must confirm before viewing sensitive content
 - **AI-based spam filtering** with confidence scores so genuine issues are prioritized
 - **Automatic routing** of grievances to the correct department
 - Submission rate limiting to prevent spam
@@ -65,21 +67,21 @@ This project is being developed as part of our academic project for the **Depart
 | **Under Review** | HOD is working on the grievance |
 | **In Progress** | Resolution underway |
 | **Reopened** | Student reopened a resolved/rejected grievance |
-| **Escalated** | Automatically escalated to Campus Admin after `7 days` or left unresolved |
-| **Resolved** | Grievance addressed; awaiting submitter confirmation |
-| **Rejected** | Dismissed by the HOD/Admin |
+| **Escalated** | Automatically escalated to Campus Admin after `7 days` or HOD can forward it to campus admin if his department can't solve |
+| **Resolved** | Grievance addressed and solve successfully
+| **Rejected** | Dismissed by the HOD |
 | **Closed** | Finalized after resolution or submitter acknowledgement |
 
 ### Appeals, Reopens & Escalations
-- **Reopen requests** and **rejection appeals** for submitters
-- **Spam appeals** when the AI flags a legitimate grievance
+- **Reopen requests** for rejection and resolved grievances if submitter is not satisfied
+
 - **Automatic escalation** to the Campus Admin if a grievance is not addressed within 7 days
-- **Forwarding** of requests to the correct department by the Campus Admin
+
 
 ### Dashboards & Reporting
 - Role-based dashboards for tracking and managing grievances
 - **Charts** (department/status analytics) for HODs and the Campus Admin
-- Search, filtering, and **CSV/Excel export** of grievances
+- Search, filtering of grievances
 
 ### Notifications
 - Email notifications for status changes, escalations, and admin decisions
@@ -119,10 +121,9 @@ This project is being developed as part of our academic project for the **Depart
 
 | Role | Can Do |
 |------|--------|
-| **Student / Staff** | Register, submit and track grievances (optionally anonymous/sensitive), remind the HOD, appeal rejections, request reopens |
-| **Staff** | Same as Student (department staff also help manage the department queue) |
+| **Student / Staff** | Register, submit and track grievances (optionally anonymous/sensitive), remind the HOD,  request reopens the grievance |
 | **HOD** | Review and respond to grievances of their department, resolve/reject, handle AI spam flags |
-| **Campus Admin** | System-wide oversight, escalate & forward requests, review escalations, manage analytics |
+| **Campus Admin** | System-wide oversight, only handle escalate grievances, manage analytics |
 
 ---
 
