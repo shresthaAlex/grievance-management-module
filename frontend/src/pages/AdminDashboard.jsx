@@ -21,7 +21,7 @@ const shortDeptName = (name = "") => {
     "Department of Civil Engineering": "Civil",
     "Department of Architecture": "Architecture",
     "Department of Applied Science and Chemical Engineering": "Applied & Chem.",
-    "Administrative Department": "Administration",
+    "General Department": "General",
   };
   return map[name] || name;
 };
@@ -204,7 +204,6 @@ const AdminDashboard = () => {
             <h1>Campus Administration</h1>
             <p>Monitor campus-wide grievances and focus on what needs attention.</p>
           </div>
-          
         </header>
 
         {toast && <div className="workflow-toast success" role="status">{toast}<button aria-label="Dismiss message" onClick={() => setToast("")}>×</button></div>}
